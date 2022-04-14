@@ -1,0 +1,484 @@
+@charset "UTF-8";
+
+  .form-control {
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 0.125rem solid #ced4da;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    border-radius: 0.5rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
+  .form-control:focus {
+    color: #212529;
+    background-color: #fff;
+    border-color: #8ddece;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgba(26, 188, 156, 0.25);
+  }
+.modal {
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  outline: 0;
+}
+.js-modal-open{
+    color: rgb(255, 123, 0);
+}
+  *{
+    
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  .modal{
+    display: absolute;
+    height: 100vh;
+    position: center;
+    top: 0;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .modal__bg{
+    background: rgba(255, 0, 0, 0);
+    height: 100vh;
+    position: absolute;
+    width: 70%;
+    text-align: center;
+  }
+  .modal__content{
+  border-radius: 6rem;
+    background: rgba(171, 247, 255, 0.911);
+    left: 50%;
+    padding: 40px;
+    position: absolute;
+    top:19rem;
+    transform: translate(-50%,-50%);
+    width: 80%;
+    text-align: center;
+  }
+
+#closebutton4{
+  color: #008de4;
+  border: solid 2px #67c5ff;
+  border-radius: 5px;
+  cursor:pointer; 
+}
+#closebutton4:hover{
+  background-color: #f3f3f3;
+  border-color: #f2ff00;
+  color: #67c5ff;
+}
+.btn-primary{
+    color: #404040;
+    border:rgb(165, 165, 165)2px #67c5ff;
+    border-radius: 5px;
+    cursor:pointer; 
+}
+.container2{
+    margin-top:-1.5rem;
+}
+
+body {
+  padding-top: 70px;                       /*上に余白をつける*/
+  font-family: 'Courier New', monospace;   /*等幅フォントを設定*/
+  text-align: center;                      /*全体を中央配置に*/                    
+  user-select: none;                      /*選択禁止*/
+  background-color: #ffffff00;          /*背景を透明に*/
+}
+#target {
+  font-size: 48px;                         /*フォントサイズを変更*/
+  letter-spacing: .1em;                    /*文字の幅を広げる*/
+ margin-bottom: -7rem;                     /*余白を削る*/
+ user-select: none;                        /*選択禁止*/
+ color:#4e4e4e
+}
+#innerHTMLtxt3{
+    color:rgb(235, 54, 120)
+}
+#innerHTMLtxt2{
+    color:rgb(235, 54, 120)
+}
+#innerHTMLtxt4{
+    color:rgb(255, 243, 231)
+}
+#innerHTMLtxt5{
+    color:rgb(140, 132, 125)
+}
+#innerHTMLtxt6{
+    font-size: 37px;
+    color:rgb(140, 132, 125)
+}
+#list1{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-bottom:-3rem
+}
+#tanngobotann2{
+    padding:0.5rem;
+    margin-left: 33px;
+}
+#tanngobotann3{
+    padding:0.5rem;
+    margin-right: 33px;
+}
+#list1{
+    display: flex;
+}
+#nihonngobotann{
+    display: inline-block;
+    padding: 2.5em 4em;
+    text-decoration: none;
+    color: #008de4;
+    border: solid 2px #67c5ff;
+    border-radius: 5px;
+    transition: .4s;
+    cursor:pointer; 
+}
+#eitanngobotann{
+    display: inline-block;
+    padding: 2.5em 2.1em;
+    text-decoration: none;
+    color: #ff70a0;
+    border: solid 2px #ff6780;
+    border-radius: 5px;
+    transition: .4s;
+    cursor:pointer;
+}
+#nihonngobotann:hover {
+    background-color: #f3f3f3;
+    border-color: #f2ff00;
+    color: #67c5ff;
+  }
+  #eitanngobotann:hover {
+    background-color: #f3f3f3;
+    border-color: #f2ff00;
+    color: #ff7ca8;
+  }
+#list12{
+    color: rgb(81, 81, 81);
+    font-weight: bold;
+}
+#tanngomesseji{
+    color:rgb(208, 117, 117)
+}
+#text-button {
+    color: orange;
+    cursor: pointer;
+    text-decoration : underline;
+    text-align: center;
+  }
+  #text{
+      color: rgb(255, 82, 125);
+  }
+  #mute{
+     text-align: left;
+  }
+  #mute2{
+    margin-left: 1.5rem;
+ }
+  #mutebutton{
+    display: inline-block;
+    padding: 5px;
+    text-decoration: none;
+    color: #9d0000;
+    border: solid 2px #c1ff9b;
+    border-radius: 54px;
+    transition: .4s;
+    cursor:pointer;
+  }
+  #mutebutton:hover {
+    background-color: #f3f3f3;
+    border-color: #f2ff00;
+    color: #67c5ff;
+  }
+/*---------------------------------------JQERYstyle-------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    transition: .2s;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    margin: 0 10px;
+    user-select: none;
+    margin-bottom: -2rem;
+}
+
+.keyboard_wrapp {
+    max-width: 1008px;
+    width: 100%;
+    background-color: #e7e7e7;
+    overflow: hidden;
+    position: relative;
+    overflow: hidden;
+    order: 2;
+    border-radius: 0.5rem;
+}
+
+.row {
+    display: flex;
+   
+}
+
+.keys {
+    width: 60px;
+    height: 60px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4px;
+    transition: .2s;
+    border-radius: 0.5rem;
+    z-index: 5;
+}
+
+.backspace_key {
+    width: 120px;
+}
+
+.tab_key {
+    width: 90px;
+}
+
+.slash_key {
+    width: 90px;
+}
+
+.caps_lock_key {
+    width: 128px;
+}
+
+.enter_key {
+    width: 120px;
+}
+
+.shift_key {
+    width: 124px;
+}
+
+.space_key {
+    max-width: 600px;
+    width: 100%;
+}
+
+.text {
+    max-width: 1008px;
+    width: 100%;
+    height: 90px;
+    margin-bottom: 30px;
+    border: none;
+    outline: none;
+    font-size: 26px;
+    background-color: #f7f7f7;
+    padding-left: 10px;
+    transition: .2s;
+}
+
+.keys.active {
+    background-color: #333;
+    color: #fff;
+}
+
+.keys.remove {
+    animation: keys_animation 0.5s forwards ;
+}
+
+@keyframes keys_animation {
+    0% {
+        background-color: #333;
+        color: #fff;
+    }
+    100% {
+        background-color: #fff;
+        color: #000;
+    }
+}
+
+body.active {
+    background-color: rgb(54,54,54);
+}
+
+.night_mode {
+    width: 80px;
+    height: 30px;
+    background-color: #e6e6e6;
+    position: absolute;
+    right: 25px;
+    top: 11.5px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.night_mode.active {
+    background-color: #2222220e;
+}
+
+.toggle_circle {
+    width: 20px;
+    height: 20px;
+    background-color: rgb(54,54,54);
+    border-radius: 50px;
+    margin: 0 5px;
+    position: absolute;
+    left: 0;
+    transition: .2s;
+}
+
+.toggle_circle.active {
+    left: 60%;
+    background-color: #fff;
+}
+
+.keyboard_wrapp.active {
+    background-color: #58585800;
+}
+
+.keys.keys_night {
+    background-color: #3c3c3c;
+    color: #fff;
+}
+
+.text.active {
+    background-color: #2b2b2b;
+    color: #fff;
+}
+
+.keys.keys_night.active {
+    background-color: #fff;
+    color: #333;
+}
+
+.keys.keys_night.remove {
+    animation: keys_night_animation 0.5s forwards;
+}
+
+@keyframes keys_night_animation {
+    0%{
+        background-color: #fff;
+        color: #000;
+    }
+    100% {
+        background-color: #333;
+        color: #fff;
+    }
+}
+
+.change_light_color {
+    width: 100px;
+    height: 20px;
+    position: absolute;
+    right: 150px;
+    top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.colors_input {
+    width: 100px;
+    height: 50px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+
+.keyboard_lights {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Merienda');
+
+.background {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+/* Default Styling */
+body {
+  font-family: 'Merienda', cursive;
+  background: rgb(255, 243, 231);
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 88vh;
+}
+.box {
+  background: rgba(255, 247, 238, 0);
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+  position: absolute;
+  z-index: 1;
+}
+
+/*---------------------------------------JQERYstyle-------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
